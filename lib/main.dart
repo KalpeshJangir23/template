@@ -1,13 +1,18 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:pdf/pdf.dart';
+import 'package:get/get.dart';
+import 'package:get_it/get_it.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:path_provider/path_provider.dart';
 import 'package:share/share.dart';
+import 'package:template/screens/SelectionPageUser.dart';
+import 'package:template/states.dart';
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  GetIt.I.registerLazySingleton(() => States());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -15,8 +20,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ResumeScreen(),
+    return const GetMaterialApp(
+      home: UserSelection(),
     );
   }
 }
