@@ -334,7 +334,6 @@ class _MessagesScreenState extends State<MessagesScreen> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: const Color.fromRGBO(186, 229, 244, 1),
       automaticallyImplyLeading: false,
       title: Row(
         children: [
@@ -403,9 +402,15 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SafeArea(
       child: Column(
         children: [
+          const Center(
+            child: Text(
+              "Profile Page",
+              style: TextStyle(fontSize: 30, color: textColor),
+            ),
+          ),
           Container(
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Row(

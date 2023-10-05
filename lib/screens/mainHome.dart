@@ -1,8 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:template/screens/Breathing.dart';
 import 'package:template/screens/colorsutil.dart';
 import 'package:template/screens/customContainer.dart';
+import 'package:template/screens/quiz_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -171,12 +173,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            alignment: Alignment.center,
-                            child: LottieBuilder.network(
-                              "https://assets6.lottiefiles.com/private_files/lf30_i2pyppik.json",
-                              height: 90,
-                              width: 120,
+                          GestureDetector(
+                            onDoubleTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Breathing()));
+                            },
+                            child: Container(
+                              alignment: Alignment.center,
+                              child: LottieBuilder.network(
+                                "https://assets6.lottiefiles.com/private_files/lf30_i2pyppik.json",
+                                height: 90,
+                                width: 120,
+                              ),
                             ),
                           ),
                           const Text(
@@ -210,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 backgroundColor: Colors.white, // Set the background color of the button
                               ),
                               onPressed: () {
-                                // Add your action here
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => QuizScreen()));
                               },
                               child: Text(
                                 "Yes, Let's Go!",

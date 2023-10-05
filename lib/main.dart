@@ -7,6 +7,7 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:path_provider/path_provider.dart';
 import 'package:share/share.dart';
 import 'package:template/screens/SelectionPageUser.dart';
+import 'package:template/signUp_page.dart';
 import 'package:template/states.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-      home: UserSelection(),
+      home: Signup(),
     );
   }
 }

@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:template/screens/mainHome.dart';
 import 'package:template/screens/post_section/home_page.dart';
+import 'package:template/screens/resume.dart';
 import 'package:template/screens/screen1.dart';
 import 'package:template/screens/screen3.dart';
 import 'package:template/screens/screen4.dart';
@@ -19,12 +20,7 @@ class BottomNavigationScreen extends StatefulWidget {
 class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   var Index = 0;
 
-  final List<Widget> screens = [
-    const HomeScreen(),
-    InstaScreen(),
-    const Screen3(),
-    const Screen4(),
-  ];
+  final List<Widget> screens = [const HomeScreen(), InstaScreen(), const Screen3(), const ResumePage()];
 
   @override
   Widget build(BuildContext context) {
