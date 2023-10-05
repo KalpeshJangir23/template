@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 import 'package:template/chat.dart';
+import 'package:template/chat_bot/chatbot_screen.dart';
 import 'package:template/screens/colorsutil.dart';
 import 'package:template/states.dart';
 
@@ -575,7 +576,11 @@ class CommunityScreen extends StatelessWidget {
       backgroundColor: mainColor,
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromRGBO(8, 8, 38, 1),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return const ChatBotScreen();
+          }));
+        },
         child: const Icon(
           Icons.person_add_alt_1,
           color: textColor,

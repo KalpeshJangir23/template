@@ -21,7 +21,7 @@ class _CategoriesState extends State<Categories> {
             children: [
               Text(
                 'Where do you stand on the education ladder?',
-                style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold, color: textColor),
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: textColor),
               ),
               const SizedBox(
                 height: 10,

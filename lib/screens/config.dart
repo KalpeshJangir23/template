@@ -15,42 +15,42 @@ class Config {
   static double get width => 1.sw;
 
   static TextTheme get textTheme => TextTheme(
-        titleLarge: GoogleFonts.sora(
+        titleLarge: GoogleFonts.exo(
           fontSize: 32.sp,
           fontWeight: FontWeight.w700,
           height: 1.6,
         ),
-        titleMedium: GoogleFonts.sora(
+        titleMedium: GoogleFonts.exo(
           fontSize: 28.sp,
           fontWeight: FontWeight.w700,
           height: 1.6,
         ),
-        titleSmall: GoogleFonts.sora(
+        titleSmall: GoogleFonts.exo(
           fontSize: 24.sp,
           fontWeight: FontWeight.w700,
           height: 1.6,
         ),
-        bodyLarge: GoogleFonts.sora(
+        bodyLarge: GoogleFonts.exo(
           fontSize: 16.sp,
           height: 1.6,
         ),
-        bodyMedium: GoogleFonts.sora(
+        bodyMedium: GoogleFonts.exo(
           fontSize: 14.sp,
           height: 1.6,
         ),
-        bodySmall: GoogleFonts.sora(
+        bodySmall: GoogleFonts.exo(
           fontSize: 12.sp,
           height: 1.4,
         ),
-        labelLarge: GoogleFonts.sora(
+        labelLarge: GoogleFonts.exo(
           fontSize: 14.sp,
           height: 1.4,
         ),
-        labelMedium: GoogleFonts.sora(
+        labelMedium: GoogleFonts.exo(
           fontSize: 12.sp,
           height: 1.0,
         ),
-        labelSmall: GoogleFonts.sora(
+        labelSmall: GoogleFonts.exo(
           fontSize: 12.sp,
           height: 1.0,
         ),

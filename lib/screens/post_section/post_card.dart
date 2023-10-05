@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:template/screens/post_section/circle_story.dart';
 
 class PostCart extends StatelessWidget {
@@ -98,13 +99,13 @@ class PostCart extends StatelessWidget {
             ],
           ),
         ),
-        const Padding(
+        Padding(
           padding: EdgeInsets.only(left: 12.0),
           child: Row(
             children: [
               Text(
                 '133 likes',
-                style: TextStyle(color: Colors.white),
+                style: GoogleFonts.exo(color: Colors.white),
               ),
             ],
           ),
@@ -124,9 +125,9 @@ class PostCart extends StatelessWidget {
                 const SizedBox(
                   width: 3,
                 ),
-                const Text(
+                Text(
                   'hello this is my first post ',
-                  style: TextStyle(
+                  style: GoogleFonts.exo(
                     color: Colors.white,
                   ),
                 ),
@@ -139,8 +140,8 @@ class PostCart extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                'view 54 comments',
-                style: TextStyle(color: Colors.grey.shade500),
+                '2 days ago',
+                style: GoogleFonts.exo(color: Colors.grey.shade500),
               ),
             ],
           ),
@@ -150,7 +151,7 @@ class PostCart extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                '2 days ago',
+                '',
                 style: TextStyle(color: Colors.grey.shade500),
               ),
             ],

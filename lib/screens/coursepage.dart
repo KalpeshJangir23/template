@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:template/screens/colorsutil.dart';
 import 'package:template/screens/courseinfopage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CoursePage extends StatefulWidget {
   const CoursePage({super.key});
@@ -20,7 +21,11 @@ class _CoursePageState extends State<CoursePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Recommended For You", style: TextStyle(fontSize: 35, color: textColor, decoration: TextDecoration.none)),
+              Text("Recommended For You",
+                  style: GoogleFonts.exo(fontSize: 25, fontWeight: FontWeight.bold, color: textColor, decoration: TextDecoration.none)),
+              SizedBox(
+                height: 10,
+              ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -72,7 +77,14 @@ class _CoursePageState extends State<CoursePage> {
                   ],
                 ),
               ),
-              const Text("Popular in DataScience", style: TextStyle(fontSize: 35, color: textColor, decoration: TextDecoration.none)),
+              SizedBox(
+                height: 10,
+              ),
+              Text("Popular in DataScience",
+                  style: GoogleFonts.exo(fontSize: 25, fontWeight: FontWeight.bold, color: textColor, decoration: TextDecoration.none)),
+              SizedBox(
+                height: 10,
+              ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(

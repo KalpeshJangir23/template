@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomContainer extends StatelessWidget {
   const CustomContainer({super.key, required this.textContainer, required this.imagePath, required this.radius, required this.textContainer2});
@@ -52,7 +53,7 @@ class CustomContainer extends StatelessWidget {
             ),
             Text(
               textContainer,
-              style: TextStyle(color: Colors.white, fontSize: 25),
+              style: GoogleFonts.exo(color: Colors.white, fontSize: 25),
             ),
             SizedBox(
               height: 10,
@@ -62,7 +63,7 @@ class CustomContainer extends StatelessWidget {
               child: Text(
                 textContainer2,
                 softWrap: true,
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: GoogleFonts.exo(color: Colors.white, fontSize: 15),
               ),
             ),
           ],

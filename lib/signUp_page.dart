@@ -203,7 +203,7 @@ class _SignupState extends State<Signup> {
                   },
                   child: Text(
                     "Get started",
-                    style: GoogleFonts.georama(
+                    style: GoogleFonts.exo(
                       color: Widgetbackground,
                       fontSize: 20,
                       fontWeight: FontWeight.w400,

@@ -1,14 +1,12 @@
-import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:template/screens/colorsutil.dart';
 import 'package:template/screens/mainHome.dart';
 import 'package:template/screens/post_section/home_page.dart';
 import 'package:template/screens/resume.dart';
-import 'package:template/screens/screen1.dart';
+
 import 'package:template/screens/screen3.dart';
-import 'package:template/screens/screen4.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
   const BottomNavigationScreen({super.key});
@@ -27,9 +25,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         height: 60,
-        backgroundColor: Color(0xff2D363F),
+        backgroundColor: mainColor, // Background color when an item is selected
+        color: textColor, // Background color when an item is selected
+        buttonBackgroundColor: textColor,
         items: const <Widget>[
-          Icon(Icons.home, size: 30),
+          Icon(
+            Icons.home,
+            size: 30,
+          ),
           Icon(
             Icons.functions_outlined,
             size: 30,

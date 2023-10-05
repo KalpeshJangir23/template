@@ -89,29 +89,34 @@ class _MainScreenState extends State<MainScreen> {
         body: _questionIndex < _questions.length
             ? Quiz(answerQuestion: _answerQuestion, questionIndex: _questionIndex, questions: _questions)
             : Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(244, 42),
-                        backgroundColor: textColor,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20), // Adjust the radius as needed
-                        )),
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) {
-                        return const BottomNavigationScreen();
-                      }));
-                    },
-                    child: Text(
-                      "Get started",
-                      style: GoogleFonts.georama(
-                        color: Widgetbackground,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w400,
+                child: Column(
+                  children: [
+                    Result(_totalScore, _resetQuiz),
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            minimumSize: const Size(244, 42),
+                            backgroundColor: textColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20), // Adjust the radius as needed
+                            )),
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return const BottomNavigationScreen();
+                          }));
+                        },
+                        child: Text(
+                          "Get started",
+                          style: GoogleFonts.georama(
+                            color: Widgetbackground,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ),
       ),
